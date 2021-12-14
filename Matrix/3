@@ -1,12 +1,15 @@
 PROGRAM
 
-arr=[1,3,5,7,9];
-sum=0;
-for i in range(0,len(arr)):
-    sum=sum+arr[i];
-print("Sum of elements in an array :"+str(sum));
-
+import numpy as np
+m=np.array([[1,2,3,4,5], [6,7,8,9,10]])
+print("matrix:")
+print(m)
+b=np.sum(m)
+print("The sum of elements in the matrix is",b)
 
 OUTPUT
 
-Sum of elements in an array :25
+matrix:
+[[ 1  2  3  4  5]
+ [ 6  7  8  9 10]]
+The sum of elements in the matrix is 55
